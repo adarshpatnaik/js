@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="msg">Hello world</h1>
+    <button onclick="msg()">Click here</button>
+    <script>
+        var a = 30;
+        alert("Hello from webpage");
+        console.log("hello from console");
+        document.write(a);
+        function msg(){
+            document.getElementById("msg").innerHTML = "Hello from JS";
+        }
+    </script>
+</body>
+</html>

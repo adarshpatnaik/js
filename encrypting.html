@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = prompt("enter no");
+        var rem=0;
+        var num1 = parseInt(num);
+        sum = "";
+        while(num1!=0){
+            rem = num1%10;
+        switch(rem){
+            case 0: sum = "z" + sum  ;
+            break;
+            case 1: sum = "o" + sum  ;
+            break;
+            case 2: sum = "tw" + sum  ;
+            break;
+            case 3: sum = "th" + sum  ;
+            break;
+            case 4: sum = "fo" + sum  ;
+            break;
+            case 5: sum = "fi" + sum  ;
+            break;
+            case 6: sum = "si" + sum  ;
+            break;
+            case 7: sum = "se" + sum  ;
+            break;
+            case 8: sum = "e" + sum  ;
+            break;
+            case 9: sum = "n" + sum  ;
+            break;
+        }
+        num1 = parseInt(num1/10)
+        }
+        document.write(sum);
+    </script>
+</body>
+</html>

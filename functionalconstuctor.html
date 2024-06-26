@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(firstname, lastname, city){
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.city = city;
+        }
+        let p1 = new person("rahul","kumar","hyderabad");
+        let p2 = new person("ram","kiran","mumbai");
+        let p3 = new person("rohit","sharma","delhi");
+        let p4 = new person("sachin","tendulkar","mumbai");
+        let p5 = new person("virat","kohli","banglore");
+        let p6 = new person("ms","dhoni","chennai");
+
+        let persons = [p1,p2,p3,p4,p5,p6];
+        for(let i of persons){
+            if(i.city=="mumbai"){
+                for(let key in i){
+                    document.write(key+"="+i[key]+"<br>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
